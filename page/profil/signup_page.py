@@ -49,7 +49,7 @@ def signup_page():
                               value=st.session_state.profile.get("age", 15))
         sex = st.selectbox(":blue[Select your sex]", ["Male", "Female", "Other"],
                            index=["Male", "Female", "Other"].index(st.session_state.profile.get("sex", "Male")))
-        fitness_goal = st.text_input(":blue[fitness_goal", placeholder="What are your fitness goals?",
+        fitness_goal = st.text_input(":blue[fitness_goal]", placeholder="What are your fitness goals?",
                                      value=st.session_state.profile.get("fitness_goal", ""))
         weight = st.number_input(":blue[weight]", placeholder="Enter your weight (kg)", min_value=0.0,
                                  value=st.session_state.profile.get("weight", 50.0))
